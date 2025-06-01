@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation using JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- linking css file -->
+     
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="errors"></div>
+    <div id="success"></div>
+    <div class="wrapper">
+
+        <!-- Form contents -->
+
+        <div class="formelement">
+
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email"/>
+
+        </div>
+
+        <div class="formelement">
+
+        <label for="phoneno">Phone number</label>
+        <input type="text" id="phoneno" name="phoneno" minlength="10" maxlength="12" required/>
+
+       </div>
+
+       <div class="formelement">
+
+        <label for="password">Password</label >
+
+        <!-- limiting password to 8 characters -->
+
+        <input type="password" id="password" name="password" minlength="8" maxlength="8" required/>  
+        <!-- Show password button -->
+            
+        <button id="showpassword">Show</button>
+
+       </div>
+
+
+       <div class="formelement">
+
+        <label for="confirmpassword">Confirm Password</label>
+
+        <!-- limiting password to 8 characters again -->
+
+        <input type="text" id="confirmpassword" name="confirmpassword"  minlength="8" maxlength="8" required/>
+
+       </div>
+
+        <input id="submitbutton" type="submit">
+
+    </div>
+
+    <!-- linking javascript file  -->
+
+    <script src="script.js"></script>
+   
+    
+</body>
+</html>
